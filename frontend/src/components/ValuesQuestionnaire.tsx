@@ -124,7 +124,7 @@ const ValuesQuestionnaire: React.FC<ValuesQuestionnaireProps> = ({ onClose, onCo
       const provider = await wallet.getEthereumProvider()
       
       // Prepare the message
-      const message = `Sign this tx to delegate your voting power to EchoVote proxy\n\nNonce: ${Date.now()}`
+      const message = `Sign this tx to delegate your voting power to UserlessAgent proxy\n\nNonce: ${Date.now()}`
       const address = wallet.address
 
       // Request signature
@@ -225,8 +225,8 @@ const ValuesQuestionnaire: React.FC<ValuesQuestionnaireProps> = ({ onClose, onCo
           ) : (
             <div className="completion-message">
               <h3>Values vector successfully measured!</h3>
-              <p>Your tailor-made EchoVote AI agent is ready to vote for you!</p>
-              <p>Now delegate your voting power to EchoVote Proxy to enjoy your automatic governance</p>
+              <p>Your tailor-made UserlessAgent AI agent is ready to vote for you!</p>
+              <p>Now delegate your voting power to UserlessAgent Proxy to enjoy your automatic governance</p>
               {authenticated && (
                 <div className="sign-message-section">
                   <button 

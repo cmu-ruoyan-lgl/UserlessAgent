@@ -111,7 +111,7 @@
   min-width: 0; /* Allows flex item to shrink below content size */
 }
 
-.echo-vote {
+.userless-agent {
   width: 270px;
   min-width: 350px;
   background-color: #1a1a1a;
@@ -121,11 +121,11 @@
   height: fit-content;
 }
 
-.echo-vote-content {
+.userless-agent-content {
   padding: 1rem 0;
 }
 
-.echo-vote-header {
+.userless-agent-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -133,17 +133,17 @@
   border-bottom: 1px solid #333;
 }
 
-.echo-vote-title {
+.userless-agent-title {
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.echo-vote-tabs {
+.userless-agent-tabs {
   display: flex;
   gap: 0.5rem;
 }
 
-.echo-vote-tab {
+.userless-agent-tab {
   padding: 0.5rem 0.8rem;
   cursor: pointer;
   border-radius: 6px;
@@ -153,12 +153,12 @@
   font-size: 0.9rem;
 }
 
-.echo-vote-tab.active {
+.userless-agent-tab.active {
   color: #fff;
   background-color: #242424;
 }
 
-.echo-vote-tab.active::before {
+.userless-agent-tab.active::before {
   content: '';
   position: absolute;
   left: 0;

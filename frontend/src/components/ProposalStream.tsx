@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/ProposalStream.css';
-import UserlessAgent from './EchoVote';
+// Removed unused import
 
 interface VotingData {
   totalVotingPower: number;

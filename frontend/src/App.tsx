@@ -2,14 +2,13 @@ import { useState, useEffect } from 'react'
 import favicon from './assets/favicon.png'
 import './styles/App.css'
 import ProposalStream from './components/ProposalStream'
-import UserlessAgent from './components/EchoVote'
+import UserlessAgent from './components/UserlessAgent'
 import ValuesQuestionnaire from './components/ValuesQuestionnaire'
 import { PrivyProvider, usePrivy } from '@privy-io/react-auth'
 
 // Create a wrapper component to use Privy hooks
 function AppContent() {
-  const [count, setCount] = useState(0)
-  const [activeEchoTab, setActiveEchoTab] = useState('YourEcho')
+  // Removed unused state variables
   const [value_vec, setValueVec] = useState<number[]>([])
   const [showQuestionnaire, setShowQuestionnaire] = useState(false)
   const [cryptoList, setCryptoList] = useState([
@@ -36,13 +35,7 @@ function AppContent() {
     return `${address.slice(0, 7)}...${address.slice(-5)}`
   }
 
-  const toggleCheck = (index: number) => {
-    setCryptoList(prevList => 
-      prevList.map((crypto, i) => 
-        i === index ? { ...crypto, isChecked: !crypto.isChecked } : crypto
-      )
-    )
-  }
+  // Removed unused toggleCheck function
 
   const toggleFollow = (index: number) => {
     setCryptoList(prevList => 

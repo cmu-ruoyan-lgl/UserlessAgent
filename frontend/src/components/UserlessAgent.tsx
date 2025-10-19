@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/EchoVote.css';
+import '../styles/UserlessAgent.css';
 // Import agent avatars
 import aliceAvatar from '../assets/icons/alice.png';
 import bobAvatar from '../assets/icons/bob.png';
@@ -118,7 +118,7 @@ const getHoverGradientByPercentage = (percentage: number) => {
 };
 
 const UserlessAgent: React.FC<UserlessAgentProps> = ({ value_vec, onOpenQuestionnaire }) => {
-  const [activeEchoTab, setActiveEchoTab] = useState('YourEcho');
+  const [activeEchoTab, setActiveEchoTab] = useState('YourAgent');
   const hasValueVec = value_vec.length > 0;
 
   const echoStats: EchoStat[] = [
@@ -136,28 +136,28 @@ const UserlessAgent: React.FC<UserlessAgentProps> = ({ value_vec, onOpenQuestion
   const sortedEchoStats = [...echoStats].sort((a, b) => b.percentage - a.percentage);
 
   return (
-    <div className="echo-vote">
-      <div className="echo-vote-header">
-        <div className="echo-vote-title">
+    <div className="userless-agent">
+      <div className="userless-agent-header">
+        <div className="userless-agent-title">
           <h2 className="fancy-title">UserlessAgent</h2>
         </div>
-        <div className="echo-vote-tabs">
+        <div className="userless-agent-tabs">
           <div 
-            className={`echo-vote-tab ${activeEchoTab === 'YourEcho' ? 'active' : ''}`}
-            onClick={() => setActiveEchoTab('YourEcho')}
+            className={`userless-agent-tab ${activeEchoTab === 'YourAgent' ? 'active' : ''}`}
+            onClick={() => setActiveEchoTab('YourAgent')}
           >
-            YourEcho
+            YourAgent
           </div>
           <div 
-            className={`echo-vote-tab ${activeEchoTab === 'AI Prototypes' ? 'active' : ''}`}
+            className={`userless-agent-tab ${activeEchoTab === 'AI Prototypes' ? 'active' : ''}`}
             onClick={() => setActiveEchoTab('AI Prototypes')}
           >
             Prototypes
           </div>
         </div>
       </div>
-      <div className="echo-vote-content">
-        {activeEchoTab === 'YourEcho' ? (
+      <div className="userless-agent-content">
+        {activeEchoTab === 'YourAgent' ? (
           !hasValueVec ? (
             <div className="values-test-prompt">
               <p>Complete Values Test to discover your AI voter profile</p>
