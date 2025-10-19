@@ -1,4 +1,4 @@
-# EchoVote
+# UserlessAgent
 为用户提供量身定制的AI去中心化治理代理人。
 
 解决当前用户参与去中心化治理的主要痛点，利用量身定制的最能体现用户自身价值观的AI代理人帮助用户进行投票决策，极大降低参与门槛；将提案以流的形式进行推送，整合进入钱包插件，让参与治理像查看余额一样简便。
@@ -49,7 +49,7 @@ which can be abstracted as below:
 
 ![blackbox](./media/black-box.png)
 
-VotingContract stands for **Business-end**: DAOs or Protocols which want to use our service to boost voting turnout and governance participation rate. User Interface stands for **Consumer-end**: users who utilize EchoVote to be easily get involved in decentralizd governance. Both ends should be able to easily take advantage EchoVote service.
+VotingContract stands for **Business-end**: DAOs or Protocols which want to use our service to boost voting turnout and governance participation rate. User Interface stands for **Consumer-end**: users who utilize UserlessAgent to be easily get involved in decentralizd governance. Both ends should be able to easily take advantage UserlessAgent service.
 
 ## Future work
 将proposal stream整合入钱包插件，使用户参与治理就像查看余额一样简便。
