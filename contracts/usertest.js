@@ -6,7 +6,7 @@ const VOTE_CONTRACT_ADDRESS = "0xYourVoteContractAddress";
 const USERLESS_AGENT_ADDRESS = "0xYourUserlessAgentAddress";
 
 describe("Vote Contract Test (Using Deployed Contracts)", function () {
-    let voteContract, echoVoter, owner, alice, bob, david;
+    let voteContract, owner, alice, bob, david;
 
     before(async function () {
         [owner, alice, bob, david] = await ethers.getSigners();

@@ -1,9 +1,9 @@
 {
-  "proposal_id": "UAVIP-001",
+  "proposal_id": "EVIP-001",
   "title": "Additional Airdrop of ECHO Tokens to the Community",
   "proposer": "Player Alice",
   "date_of_submission": "03/29/2025",
-  "summary": "This proposal seeks to distribute an additional airdrop of UA tokens to the UserlessAgent community to further incentivize engagement, attract new users, and ensure that a broader segment of the community has access to UA tokens for governance participation. The airdrop will serve as an opportunity to reward loyal participants and encourage further growth within the ecosystem.",
+  "summary": "This proposal seeks to distribute an additional airdrop of ECHO tokens to the EchoVote community to further incentivize engagement, attract new users, and ensure that a broader segment of the community has access to ECHO tokens for governance participation. The airdrop will serve as an opportunity to reward loyal participants and encourage further growth within the ecosystem.",
   "rationale": {
     "point_1": "Expand community engagement: The additional airdrop will incentivize more participants to join the EchoVote platform, helping to grow the user base and boost participation in governance processes.",
     "point_2": "Promote adoption of ECHO tokens: Distributing more tokens to a wider audience will encourage active usage of ECHO for voting, staking, and governance, creating a stronger ecosystem.",
@@ -12,14 +12,14 @@
   },
   "proposed_change": {
     "airdrop_details": {
-      "total_amount_to_be_airdropped": "100,000,000 UA",
+      "total_amount_to_be_airdropped": "100,000,000 ECHO",
       "distribution_method": [
         "Snapshot-based distribution for existing holders.",
         "Claimable airdrop for new users who join and complete necessary onboarding steps."
       ],
       "eligible_users": [
-        "Existing token holders who meet a minimum threshold of UA tokens (e.g., 100 UA).",
-        "New users who register and complete basic participation actions, such as verifying their wallet or staking a minimum amount of UA tokens."
+        "Existing token holders who meet a minimum threshold of ECHO tokens (e.g., 100 ECHO).",
+        "New users who register and complete basic participation actions, such as verifying their wallet or staking a minimum amount of ECHO tokens."
       ],
       "distribution_schedule": {
         "snapshot_date": "[Snapshot Date]",
@@ -31,10 +31,10 @@
   },
   "impact_assessment": {
     "positive_effects": [
-      "Increased community participation and engagement with UserlessAgent governance.",
-      "Expansion of the token holder base and broader distribution of UA tokens.",
-      "Enhanced liquidity and market visibility of the UA token.",
-      "Incentives for new users to participate and engage with UserlessAgent."
+      "Increased community participation and engagement with EchoVote governance.",
+      "Expansion of the token holder base and broader distribution of ECHO tokens.",
+      "Enhanced liquidity and market visibility of the ECHO token.",
+      "Incentives for new users to participate and engage with EchoVote."
     ],
     "potential_risks_challenges": [
       "Possible market dilution due to the sudden influx of new tokens into circulation.",
@@ -44,7 +44,7 @@
     "mitigating_measures": [
       "Implement claim caps or limits to prevent large-scale token hoarding or abuse.",
       "Provide staking or vesting mechanisms to encourage users to hold tokens for the long term rather than selling them immediately.",
-      "Monitor the airdrop process to ensure it is distributed fairly and in line with UserlessAgent's community values."
+      "Monitor the airdrop process to ensure it is distributed fairly and in line with EchoVote's community values."
     ]
   },
   "voting_process": {
@@ -58,6 +58,6 @@
       "Reject the additional airdrop (keep the current token distribution strategy)."
     ]
   },
-  "conclusion": "The additional airdrop of UA tokens represents a strategic effort to further engage the UserlessAgent community and incentivize broader participation in governance. By distributing tokens to a wider audience, we aim to strengthen the ecosystem, encourage more active involvement, and ensure the continued success and growth of UserlessAgent. We encourage all token holders to review this proposal and vote accordingly.",
+  "conclusion": "The additional airdrop of ECHO tokens represents a strategic effort to further engage the EchoVote community and incentivize broader participation in governance. By distributing tokens to a wider audience, we aim to strengthen the ecosystem, encourage more active involvement, and ensure the continued success and growth of EchoVote. We encourage all token holders to review this proposal and vote accordingly.",
   "references": "[Any relevant links or documentation about tokenomics, governance models, airdrop mechanisms, etc.]"
 }
