@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#06dcf9",
+              "background-light": "#f5f8f8",
+              "background-dark": "#0f2023",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px"
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .neon-glow {
+        box-shadow: 0 0 5px theme("colors.primary"), 0 0 10px theme("colors.primary"), 0 0 15px theme("colors.primary"), 0 0 20px theme("colors.primary");
+      }
+      .text-neon {
+        text-shadow: 0 0 2px theme("colors.primary"), 0 0 5px theme("colors.primary"), 0 0 10px theme("colors.primary");
+      }
+      .glassmorphism {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white">
+<div class="flex h-auto min-h-screen w-full flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-white/10 px-10 py-3">
+<div class="flex items-center gap-4">
+<div class="h-8 w-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold">EchoVote</h2>
+</div>
+<div class="flex flex-1 items-center justify-end gap-8">
+<nav class="flex items-center gap-9 text-sm font-medium text-white/80">
+<a class="hover:text-primary" href="#">Home</a>
+<a class="hover:text-primary" href="#">Explore</a>
+<a class="hover:text-primary" href="#">Create</a>
+</nav>
+<button class="rounded-full bg-white/10 p-2 text-white hover:bg-primary/50">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"></path>
+</svg>
+</button>
+<div class="h-10 w-10 rounded-full bg-cover bg-center bg-no-repeat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCUkkV-DOy7vg3I-l5Vyku60qAM5UkRAsoYohWiicN1qms4p25BoljeyTmZDFyN_K9T1BvnjZmSVuGnbhpyoBwCjqSbOxWOHYwfMuP_JPUudHvDSahqjpmJ3DbcWiyYFP9PzCyl5exzo_66Z6adYHwDdoxkmAOzKZduyAvnvwRxkbCwu9avX9WQS0WsusqSO_1fYqhVLg3SxZlejgbNWaknxT1iVzJWcU-GHlRb3tnMcB-eyyek5aBGYEOIW7H4pK5-hPCkbisd5Q");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10">
+<div class="flex w-full max-w-5xl flex-col gap-8">
+<div class="flex flex-col items-center gap-6">
+<div class="relative">
+<div class="h-40 w-40 rounded-full bg-cover bg-center bg-no-repeat ring-4 ring-primary neon-glow" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZItPoqrsO8fMGTZbD4ggTTxBBKrW2D0gXj5KWUhdg1ItOoR7DFH2sGWP60Pv9nBQpc_UOjC9adRcmJ4zxR2x-sObbz5KmVGI2hiEd0YUA7EeQwWAm7gn4lGKUilYFx8ujzrxNYj61zTLDun7Fa6P6sXy8vySRkNG5M_lHtu-jHSDLy_n0yNh7A0VJzifNEILLxrFJeUntbYP-9c4j8AVW-UKnaklsrPV3EpFha2g72H_RyNyfX5ctZ95FoSZHm15AOPsfwRIxRQ");'></div>
+</div>
+<div class="flex flex-col items-center gap-1 text-center">
+<p class="text-4xl font-black text-neon">Sophia Carter</p>
+<p class="text-white/60">@sophia_carter</p>
+</div>
+<button class="rounded bg-primary px-6 py-2 font-bold text-background-dark transition-all hover:shadow-lg hover:shadow-primary/50">Edit Profile</button>
+</div>
+<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+<div class="glassmorphism flex flex-col gap-2 rounded-xl p-6">
+<p class="font-medium text-white/80">Voting Participation</p>
+<div class="relative h-24 w-24">
+<svg class="h-full w-full" height="36" viewBox="0 0 36 36" width="36" xmlns="http://www.w3.org/2000/svg">
+<circle class="stroke-current text-white/10" cx="18" cy="18" fill="none" r="16" stroke-width="2"></circle>
+<circle class="stroke-current text-primary" cx="18" cy="18" fill="none" r="16" stroke-dasharray="85 100" stroke-linecap="round" stroke-width="2"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center text-2xl font-bold">85%</div>
+</div>
+<p class="text-lg font-medium text-green-400">+5%</p>
+</div>
+<div class="glassmorphism flex flex-col gap-2 rounded-xl p-6">
+<p class="font-medium text-white/80">Agent Count</p>
+<p class="text-5xl font-bold text-neon">3</p>
+<p class="text-lg font-medium text-green-400">+1</p>
+</div>
+<div class="glassmorphism flex flex-col gap-2 rounded-xl p-6">
+<p class="font-medium text-white/80">Contribution Score</p>
+<div class="flex items-center gap-1">
+<span class="text-4xl font-bold">4.8</span>
+<svg class="h-6 w-6 text-primary neon-glow" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+</svg>
+</div>
+<p class="text-lg font-medium text-green-400">+0.2</p>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="border-b border-white/10">
+<nav aria-label="Tabs" class="-mb-px flex space-x-8 px-4">
+<a class="border-primary text-primary whitespace-nowrap border-b-2 px-1 py-4 text-sm font-medium" href="#">Voting History</a>
+<a class="border-transparent text-white/60 hover:border-white/30 hover:text-white whitespace-nowrap border-b-2 px-1 py-4 text-sm font-medium" href="#">Agent Settings</a>
+<a class="border-transparent text-white/60 hover:border-white/30 hover:text-white whitespace-nowrap border-b-2 px-1 py-4 text-sm font-medium" href="#">Achievements</a>
+<a class="border-transparent text-white/60 hover:border-white/30 hover:text-white whitespace-nowrap border-b-2 px-1 py-4 text-sm font-medium" href="#">Settings</a>
+</nav>
+</div>
+<div class="overflow-x-auto">
+<div class="inline-block min-w-full align-middle">
+<div class="overflow-hidden">
+<table class="min-w-full divide-y divide-white/10">
+<thead class="bg-white/5">
+<tr>
+<th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white/80" scope="col">Poll</th>
+<th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white/80" scope="col">Choice</th>
+<th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white/80" scope="col">Time</th>
+<th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white/80" scope="col">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-white/10">
+<tr class="hover:bg-white/5 glassmorphism">
+<td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-white">Community Poll: Best Coffee Shop</td>
+<td class="whitespace-nowrap px-6 py-4 text-sm text-primary">The Daily Grind</td>
+<td class="whitespace-nowrap px-6 py-4 text-sm text-white/60">2d ago</td>
+<td class="whitespace-nowrap px-6 py-4 text-sm">
+<span class="inline-flex items-center rounded-full bg-green-500/20 px-2.5 py-0.5 text-xs font-medium text-green-400">
+<svg class="-ml-0.5 mr-1.5 h-2 w-2 text-green-400" fill="currentColor" viewBox="0 0 8 8">
+<circle cx="4" cy="4" r="3"></circle>
+</svg>
+                            Completed
+                          </span>
+</td>
+</tr>
+<tr class="hover:bg-white/5 glassmorphism">
+<td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-white">Tech Forum: Future of AI</td>
+<td class="whitespace-nowrap px-6 py-4 text-sm text-primary">AI Ethics Panel</td>
+<td class="whitespace-nowrap px-6 py-4 text-sm text-white/60">5d ago</td>
+<td class="whitespace-nowrap px-6 py-4 text-sm">
+<span class="inline-flex items-center rounded-full bg-green-500/20 px-2.5 py-0.5 text-xs font-medium text-green-400">
+<svg class="-ml-0.5 mr-1.5 h-2 w-2 text-green-400" fill="currentColor" viewBox="0 0 8 8">
+<circle cx="4" cy="4" r="3"></circle>
+</svg>
+                            Completed
+                          </span>
+</td>
+</tr>
+<tr class="hover:bg-white/5 glassmorphism">
+<td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-white">Local Elections: City Council</td>
+<td class="whitespace-nowrap px-6 py-4 text-sm text-primary">Candidate A</td>
+<td class="whitespace-nowrap px-6 py-4 text-sm text-white/60">1w ago</td>
+<td class="whitespace-nowrap px-6 py-4 text-sm">
+<span class="inline-flex items-center rounded-full bg-green-500/20 px-2.5 py-0.5 text-xs font-medium text-green-400">
+<svg class="-ml-0.5 mr-1.5 h-2 w-2 text-green-400" fill="currentColor" viewBox="0 0 8 8">
+<circle cx="4" cy="4" r="3"></circle>
+</svg>
+                            Completed
+                          </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

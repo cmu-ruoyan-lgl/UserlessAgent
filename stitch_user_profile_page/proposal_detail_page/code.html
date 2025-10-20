@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>EchoVote Proposal Details</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#06dcf9",
+              "background-light": "#f5f8f8",
+              "background-dark": "#0f2023",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .text-glow {
+        text-shadow: 0 0 8px theme("colors.primary"), 0 0 20px theme("colors.primary / 50%");
+      }
+      .border-glow {
+        box-shadow: 0 0 5px theme("colors.primary / 70%"), 0 0 10px theme("colors.primary / 50%");
+      }
+      .button-glow {
+        box-shadow: 0 0 10px theme("colors.primary / 60%"), 0 0 20px theme("colors.primary / 40%");
+      }
+      .progress-glow {
+        filter: drop-shadow(0 0 5px theme("colors.primary / 80%"));
+      }
+      .glassmorphism {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<div class="flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-white/10 px-10 py-4">
+<div class="flex items-center gap-4">
+<div class="h-8 w-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-2xl font-bold leading-tight tracking-tighter text-white">EchoVote</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-center gap-8">
+<a class="text-sm font-medium text-white/80 transition-colors hover:text-white" href="#">Home</a>
+<a class="text-sm font-medium text-white transition-colors hover:text-white" href="#">Proposals</a>
+<a class="text-sm font-medium text-white/80 transition-colors hover:text-white" href="#">Community</a>
+<a class="text-sm font-medium text-white/80 transition-colors hover:text-white" href="#">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white/5 text-white/80 transition-colors hover:bg-white/10 hover:text-white">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"></path>
+</svg>
+</button>
+<div class="h-10 w-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAw8XwElGA54j00pK3oiZ_T1BJLF0sOrx1r7HY85TsOqG0LMf9zDUqnsCrlj6saOLv20J23EjCJFMFehOnXmgJoiKnZrBRC4RAc2nRNs11FxN2mRgWv4MSI0EQyGqBuHLld95KtKwP1EhgLkGkEFAgHnLC_M11N6S4ssQnxi9slBlT4h7HbCcX9d0LZqkWdzwI2xKXnH4NdBv4rNABJ-kHTNv8KdWuq9DH95RhXP5xMNFiLqpmjkkE-TL5c0GjTQT44mhwsLYzODQ");'></div>
+</div>
+</header>
+<main class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex flex-col gap-12">
+<div class="flex flex-col items-center text-center gap-6">
+<button class="flex items-center gap-2 text-sm font-medium text-white/60 transition-colors hover:text-white">
+<svg fill="currentColor" height="16" viewBox="0 0 256 256" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+</svg>
+                Back to Proposals
+              </button>
+<div class="flex flex-col gap-2">
+<span class="rounded-lg border border-primary/50 bg-primary/10 px-3 py-1 text-sm font-medium text-primary border-glow">ID: #2024-007</span>
+<h1 class="text-5xl md:text-7xl font-black tracking-tighter text-white text-glow">Revamp Community Engagement Strategy</h1>
+</div>
+<div class="flex items-center gap-2 text-2xl font-bold text-primary text-glow">
+<span>12d</span><span>:</span><span>08h</span><span>:</span><span>45m</span><span>:</span><span>22s</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 @container">
+<div class="lg:col-span-2 flex flex-col gap-8">
+<div class="glassmorphism rounded-xl p-6">
+<h2 class="text-2xl font-bold tracking-tight text-white mb-4">Proposal Information</h2>
+<div class="prose prose-invert max-w-none text-white/80">
+<p class="font-medium">
+                      This proposal outlines a comprehensive strategy to enhance community engagement through various initiatives, including online forums, in-person events, and
+                      collaborative projects. The goal is to foster a more active and connected community, leading to increased participation and satisfaction.
+                    </p>
+<details class="group">
+<summary class="cursor-pointer text-primary hover:underline">Show full proposal</summary>
+<div class="mt-4">
+<h3 class="text-primary/80">Detailed Breakdown</h3>
+<p>
+                          We will establish a new set of community forums with dedicated moderators. Bi-monthly virtual town halls will be hosted to gather direct feedback. A yearly
+                          in-person conference will be organized to strengthen bonds. Funding will be allocated for community-led projects...
+                        </p>
+<ul class="text-primary/80">
+<li>New Forum Implementation</li>
+<li>Virtual Town Halls</li>
+<li>Annual In-Person Conference</li>
+<li>Community Project Grants</li>
+</ul>
+</div>
+</details>
+</div>
+<div class="mt-6 flex items-center gap-4 border-t border-white/10 pt-4">
+<img alt="Alex Harper" class="h-12 w-12 rounded-full border-2 border-primary/50 border-glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_GgWoCujAg2E-ibf3FGMF6By9NBrkGPyInnKnql3Z3XcErMJrygwwsigARE3rRM-tXpLPU24Fp-a84BoO2MO85Ezu6ES9UoY6oEi6iFm6qQdDT1TUvu1gPtPKYjVt8QaTuq0ld7qs34D0F2Ccv7H0YqFJn_bHU4fjR_-QLXvCmK_crS1N1pr-3l4BBPqn3fmu848Ve2nIj9p_NeeBUwXkM5ue_95Hkuar8cGjaHhjgUyayWrtCWGcJvuFbiB75hUdlKH1VCwgVQ"/>
+<div>
+<p class="font-bold text-white">Alex Harper</p>
+<p class="text-sm text-white/60">Proposer</p>
+</div>
+<a class="ml-auto rounded-lg bg-primary/20 px-4 py-2 text-sm font-bold text-primary transition-colors hover:bg-primary/30" href="#">View Profile</a>
+</div>
+</div>
+<div class="glassmorphism rounded-xl p-6">
+<h2 class="text-2xl font-bold tracking-tight text-white mb-4">Discussion</h2>
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<img class="h-10 w-10 shrink-0 rounded-full border-2 border-white/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_GgWoCujAg2E-ibf3FGMF6By9NBrkGPyInnKnql3Z3XcErMJrygwwsigARE3rRM-tXpLPU24Fp-a84BoO2MO85Ezu6ES9UoY6oEi6iFm6qQdDT1TUvu1gPtPKYjVt8QaTuq0ld7qs34D0F2Ccv7H0YqFJn_bHU4fjR_-QLXvCmK_crS1N1pr-3l4BBPqn3fmu848Ve2nIj9p_NeeBUwXkM5ue_95Hkuar8cGjaHhjgUyayWrtCWGcJvuFbiB75hUdlKH1VCwgVQ"/>
+<div class="flex-1">
+<div class="flex items-baseline gap-2">
+<p class="font-bold text-white">Jordan Carter</p>
+<p class="text-xs text-white/50">2 days ago</p>
+</div>
+<p class="text-sm text-white/80">I think this is a great idea! It aligns perfectly with our goals for community engagement.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 pl-14">
+<img class="h-10 w-10 shrink-0 rounded-full border-2 border-white/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLVBqmcYAVk2sgTkE1jfsfUSmLDi6W_4bTa_HAbPRLhk0LyXsWpH1wLQpNw1xiAsb9x8_LZ3ZBJs7gHIsla67WsH2N8RadBMtpYQM4Toujb2usHvK66dLaj7nXEVs_EHcSlMWxpAFUXWhMNNN8ZfGn-t3_Y4CjDE2J_2TrCnAxHYylWL_PXctSP6l3JUnHt-bJNJFSo4TlUK8B3qKU8hKo_K3siyxDwfAishX7JkMdPw48_7QYh6YILaGyPVq2m2CGzwtsEZ4Xkw"/>
+<div class="flex-1">
+<div class="flex items-baseline gap-2">
+<p class="font-bold text-white">Sophia Green</p>
+<p class="text-xs text-white/50">1 day ago</p>
+</div>
+<p class="text-sm text-white/80">I agree. It's well-thought-out and addresses key areas for improvement.</p>
+</div>
+</div>
+<div class="flex w-full items-start gap-3 pt-4 border-t border-white/10">
+<img class="h-10 w-10 shrink-0 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw8XwElGA54j00pK3oiZ_T1BJLF0sOrx1r7HY85TsOqG0LMf9zDUqnsCrlj6saOLv20J23EjCJFMFehOnXmgJoiKnZrBRC4RAc2nRNs11FxN2mRgWv4MSI0EQyGqBuHLld95KtKwP1EhgLkGkEFAgHnLC_M11N6S4ssQnxi9slBlT4h7HbCcX9d0LZqkWdzwI2xKXnH4NdBv4rNABJ-kHTNv8KdWuq9DH95RhXP5xMNFiLqpmjkkE-TL5c0GjTQT44mhwsLYzODQ"/>
+<div class="flex-1">
+<textarea class="form-input w-full resize-none rounded-lg border-2 border-primary/20 bg-primary/5 p-3 text-sm text-white placeholder:text-white/40 focus:border-primary focus:ring-0 focus:ring-offset-0" placeholder="Add a comment..."></textarea>
+<div class="mt-2 flex justify-end gap-2">
+<button class="rounded-lg bg-white/10 px-4 py-2 text-sm font-bold text-white/80 transition-colors hover:bg-white/20">Cancel</button>
+<button class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-background-dark transition-opacity hover:opacity-90 button-glow">Comment</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-1 flex flex-col gap-8">
+<div class="glassmorphism rounded-xl p-6">
+<h2 class="text-2xl font-bold tracking-tight text-white mb-4">Voting Status</h2>
+<div class="flex justify-center mb-6">
+<div class="relative h-40 w-40">
+<svg class="h-full w-full" viewBox="0 0 36 36">
+<path class="stroke-primary/20" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3"></path>
+<path class="stroke-primary progress-glow" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="75, 100" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="text-4xl font-bold text-white text-glow">75%</span>
+<span class="text-sm text-white/60">Participation</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between text-sm">
+<span class="font-bold text-white">For</span>
+<span class="text-white/80">60%</span>
+</div>
+<div class="h-2 w-full rounded-full bg-primary/20"><div class="h-2 rounded-full bg-primary progress-glow" style="width: 60%"></div></div>
+<div class="flex items-center justify-between text-sm">
+<span class="font-bold text-white">Against</span>
+<span class="text-white/80">30%</span>
+</div>
+<div class="h-2 w-full rounded-full bg-primary/20"><div class="h-2 rounded-full bg-primary progress-glow" style="width: 30%"></div></div>
+<div class="flex items-center justify-between text-sm">
+<span class="font-bold text-white">Abstain</span>
+<span class="text-white/80">10%</span>
+</div>
+<div class="h-2 w-full rounded-full bg-primary/20"><div class="h-2 rounded-full bg-primary progress-glow" style="width: 10%"></div></div>
+</div>
+<p class="mt-4 text-center text-sm text-white/60">Quorum: 150/200 votes</p>
+</div>
+<div class="glassmorphism rounded-xl p-6">
+<h2 class="text-2xl font-bold tracking-tight text-white mb-4">AI Agent Analysis</h2>
+<div class="mb-4">
+<p class="text-sm text-white/80">The AI agent recommends approval based on the proposal's alignment with community values. Historical data suggests similar initiatives have high success rates.</p>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between text-sm font-medium">
+<span class="text-white">Historical Accuracy</span>
+<span class="font-bold text-primary text-glow">90%</span>
+</div>
+<div class="h-2 w-full rounded-full bg-primary/20"><div class="h-2 rounded-full bg-primary progress-glow" style="width: 90%;"></div></div>
+</div>
+<div class="mt-6 flex flex-col gap-3">
+<button class="w-full rounded-lg bg-primary py-3 text-base font-bold text-background-dark transition-opacity hover:opacity-90 button-glow">Vote Approve</button>
+<button class="w-full rounded-lg bg-white/10 py-3 text-base font-bold text-white/80 transition-colors hover:bg-white/20">Vote Reject</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h2 class="text-3xl font-bold tracking-tight text-white text-center">Related Proposals</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+<div class="glassmorphism group flex flex-col gap-3 rounded-xl p-4 transition-all duration-300 hover:border-primary/50 hover:bg-white/10">
+<div class="w-full aspect-video bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA8zWwgZB6pP3p5oQS7PQIe_5in9sOWhglahyJkyLTOzNGdOmjLFoXOYPZXiEsngeprqbhRAWW83NcZZ9gqKUb7-1jprbmYnVjw9gp-NtwEy3w7IId1WkeTpt1IVKT9xk1gh-2YWxaXbgiBlymB9YZQssAjawxegXFd-KvHhgyRhoH3YCQBjJvSNoNvsFeKYYPHfY6uw2ayeVKDRuiD6bHF_Y3AIT-A0VXf2lL_K4xbQV3Hrh5ZCPBUY9t-RPsH4I5HMUuTiQzpEw");'></div>
+<p class="text-base font-bold text-white transition-colors group-hover:text-primary">Proposal: Community Event Planning</p>
+</div>
+<div class="glassmorphism group flex flex-col gap-3 rounded-xl p-4 transition-all duration-300 hover:border-primary/50 hover:bg-white/10">
+<div class="w-full aspect-video bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPHJ9oCuhWca_hbN7AttdhClZva32XPjnSIOfTPvxQnqw_-BCHXSM8H3TqhHE7-UOCV6YLykkfvqCK3WymziY6TG5elx1lyP8JWblj-s5zPX6RlW0d_lhIODW57t_jUo0eOg0r8AnO_9oqR9159R-WCcLJLtz-EZELiOFyHJx9rtce2Ka3V_W3O5BJB4Ae-Av8tzGG2wjJHlcvUtRUXsp_mzZhzLRDJpCK0JoG-Qb8W0AoaF5sxiOszraebUWdimQjRUO-FHhEaw");'></div>
+<p class="text-base font-bold text-white transition-colors group-hover:text-primary">Proposal: Online Forum Moderation</p>
+</div>
+<div class="glassmorphism group flex flex-col gap-3 rounded-xl p-4 transition-all duration-300 hover:border-primary/50 hover:bg-white/10">
+<div class="w-full aspect-video bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDP3W-S0DhlZMU7xNWvQkfsMiFEJ46xF4ca2Gx1Rg_Ehj5do1LxqKUjzkmzquxf1HrwqFlMhLMOKGpCRsoXhN7-BwE616_6b0YkUFBQyl79-6t_fRtvpn10Me4zWXDylFrFkOCFtZ1K-_UJZo-nIeCKv5mRJh8hV4J0I4-64H_5HPbHrKev1bDA8UOIwwkhPD17jmZYGqm2lznlEp0KcayRUbFJXGEc49CIqzm1_SdLUORajxvp2QO_bilutMd-7XvOr9OqkCyW6g");'></div>
+<p class="text-base font-bold text-white transition-colors group-hover:text-primary">Proposal: Collaborative Project Funding</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

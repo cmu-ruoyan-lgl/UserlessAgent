@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#06dcf9",
+              "background-light": "#f5f8f8",
+              "background-dark": "#0f2023",
+            },
+            fontFamily: {
+              "display": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .glassmorphism {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+      .neon-glow {
+        box-shadow: 0 0 5px theme('colors.primary'), 0 0 10px theme('colors.primary'), 0 0 20px theme('colors.primary');
+      }
+      .neon-text {
+        text-shadow: 0 0 5px theme('colors.primary'), 0 0 10px theme('colors.primary');
+      }
+      .gradient-text {
+        background: linear-gradient(90deg, theme('colors.primary'), #f906d4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-black font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="flex h-full grow flex-col">
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between whitespace-nowrap px-10 py-3 glassmorphism border-b border-primary/20">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary neon-glow">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold tracking-[-0.015em] neon-text">EchoVote</h2>
+</div>
+<div class="flex flex-1 justify-end">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-6 bg-gradient-to-r from-primary to-blue-500 text-white text-sm font-bold tracking-[0.015em] hover:shadow-[0_0_20px_theme(colors.primary)] transition-shadow duration-300">
+<span class="truncate">Wallet connect</span>
+</button>
+</div>
+</header>
+<main class="mt-20 px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="flex w-full max-w-[960px] flex-col gap-8">
+<div class="p-6 rounded-xl glassmorphism border border-primary/30" style="box-shadow: 0 8px 32px rgba(0, 212, 255, 0.1);">
+<div class="flex flex-col items-center gap-4">
+<div class="relative bg-center bg-no-repeat aspect-square bg-cover rounded-full size-32 border-2 border-primary neon-glow" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJfbaI0jBv2jOuIsgO1lo9lcbiL2wtH02cA_gXcozYe-KJTb_VeHBKHkJX6i_v8zl-6O3W-kf7iFlr2PFIdgZy8f4xR5PlVXxbtc0ue0jZIIeQwWxGNrP_Fk0GdfDV5bX-TIJXJz_uNGl2gR1p7UUDYTVvsVBRa2_vS6CwOPgyGIj-cBoRAOJ7BXjCU9sKfJm0PHsYwgx9tbDPTfeQTvk62o-Wxjl5P2zX3pYmOXjPhvzfsgF2z4hM3hbZYc5VWN8xHrYAMONY5Q");'>
+<span class="absolute bottom-1 right-1 h-4 w-4 bg-green-500 rounded-full border-2 border-background-dark animate-pulse"></span>
+</div>
+<div class="flex flex-col items-center justify-center">
+<p class="text-white text-2xl font-mono font-bold tracking-[-0.015em] text-center" style="text-shadow: 0 0 8px #f906d4;">0x4aB...789</p>
+<p class="text-white/70 text-base font-normal">Connected</p>
+</div>
+</div>
+</div>
+<div class="p-6 rounded-xl glassmorphism border border-primary/30 hover:shadow-[0_0_20px_rgba(6,220,249,0.2)] transition-shadow duration-300">
+<h2 class="text-2xl font-bold mb-4 neon-text text-white">Portfolio</h2>
+<div class="space-y-4">
+<div class="flex items-center justify-between text-white/90">
+<div class="flex items-center gap-3">
+<img alt="Bitcoin" class="h-8 w-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRSpuF8azZz35Au5Kj3mTNHyMS5HWX631b4c1xS9KuACvecbVROep2GWVhbwFbmpkgLU0Vq1HlRngdynqwoebS9j06UqRWZKWabPhpoQHiUTFicWPevH5u9rjAPQ55mnpKYVGUA7pHnKxL9vy8DpT252esQOwMv_ucXrPzfh_uAEqr_gGMcQO-DFgUW9QiG6lXTUZYkimzz5EIHIa3Pj4VvdxNXp3fv2Zx8ynGDE3XzgP-Rcdj0Cl8qK9SimkBD4-OCs8CVkz2eQ"/>
+<span class="font-medium">Bitcoin</span>
+</div>
+<div class="text-right">
+<p>$27,500</p>
+<p class="text-green-400" style="text-shadow: 0 0 5px #00ff00;">+2.5%</p>
+</div>
+</div>
+<div class="flex items-center justify-between text-white/90">
+<div class="flex items-center gap-3">
+<img alt="Ethereum" class="h-8 w-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiKPS-1LTJppD1rA4lEoMLbgbE645W_tZnPZePaipayzzw3MS291Wmsw_Te9iPQrLlAF25w2YP_FzqdHTYNw2Ih7BhsI9M9tQyMvPJyQhKBoQ6Vg4E9fzwUk2U6jcbW8O0m68xZo-TjqC4uzmfyo1QlEzW9NsJrqtLIDr-wGWkpLA50PhmmQ1_3aHyhH2GK6EIqUpOOJBdgK8Uha94LHADE2o3zim97ezzyPMFSjEZQdubjVKE2vtQaL2q25rq_iMcXP_laBfUpg"/>
+<span class="font-medium">Ethereum</span>
+</div>
+<div class="text-right">
+<p>$1,850</p>
+<p class="text-red-400" style="text-shadow: 0 0 5px #ff0000;">-1.2%</p>
+</div>
+</div>
+<div class="flex items-center justify-between text-white/90">
+<div class="flex items-center gap-3">
+<img alt="Litecoin" class="h-8 w-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4G34uwRT8Q73sFvbGHOLR6jBEjYX8d6eK-BfNVlxjaU4nZSwJj4dJBTt-hUM53XkXrCgbMJnm6me5Y9InZ4fEzRi4dUTEKxxBMROsrD-oIsoxWHMtuQmwpOlqqgarxqaVYczOUptRNTdd1awIdZfNshOTFOUS8MvE6DZIpADTAYEJnuFGqmS8CDuZk63aneKs3L4Z_QJPFFiFC2uqKex1-qLtTkHyq5SVt-WnPLUB5KsjWapMJvNA50EWUksUtwUFBYk2MjX2AQ"/>
+<span class="font-medium">Litecoin</span>
+</div>
+<div class="text-right">
+<p>$95</p>
+<p class="text-green-400" style="text-shadow: 0 0 5px #00ff00;">+0.8%</p>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-xl glassmorphism border-2 border-transparent bg-clip-padding" style="border-image: linear-gradient(90deg, theme('colors.primary'), #f906d4) 1;">
+<div class="p-6">
+<h2 class="text-2xl font-bold mb-4 gradient-text">AI Agent</h2>
+<div class="border-b border-primary/20 mb-4">
+<nav class="flex -mb-px gap-8">
+<a class="flex flex-col items-center justify-center border-b-2 border-primary text-primary pb-3 pt-2 px-1" href="#">
+<p class="text-sm font-bold tracking-[0.015em]">YourAgent</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-white/70 hover:text-white pb-3 pt-2 px-1" href="#">
+<p class="text-sm font-bold tracking-[0.015em]">Prototypes</p>
+</a>
+</nav>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex gap-6 justify-between text-white">
+<p class="text-base font-medium">Agent Progress</p>
+<p class="text-sm font-normal">75%</p>
+</div>
+<div class="rounded-full bg-primary/20 h-2.5">
+<div class="h-2.5 rounded-full bg-primary neon-glow" style="width: 75%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-2xl font-bold px-4 pb-3 pt-5 text-white neon-text">Proposal Stream</h2>
+<div class="space-y-4">
+<div class="p-4 rounded-xl glassmorphism border border-primary/30 hover:border-primary hover:shadow-[0_0_20px_rgba(6,220,249,0.2)] transition-all duration-300">
+<div class="flex flex-col gap-2">
+<p class="text-white text-lg font-bold">Proposal 1: Community Fund Allocation</p>
+<p class="text-white/70 text-sm">Voting ends in 3 days</p>
+<div class="w-full bg-primary/20 rounded-full h-2.5 mt-2">
+<div class="bg-gradient-to-r from-purple-500 to-primary h-2.5 rounded-full" style="width: 75%; box-shadow: 0 0 5px #06dcf9;"></div>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-xl glassmorphism border border-primary/30 hover:border-primary hover:shadow-[0_0_20px_rgba(6,220,249,0.2)] transition-all duration-300">
+<div class="flex flex-col gap-2">
+<p class="text-white text-lg font-bold">Proposal 2: Governance Model Update</p>
+<p class="text-white/70 text-sm">Voting ends in 7 days</p>
+<div class="w-full bg-primary/20 rounded-full h-2.5 mt-2">
+<div class="bg-gradient-to-r from-purple-500 to-primary h-2.5 rounded-full" style="width: 45%; box-shadow: 0 0 5px #06dcf9;"></div>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-xl glassmorphism border border-primary/30 hover:border-primary hover:shadow-[0_0_20px_rgba(6,220,249,0.2)] transition-all duration-300">
+<div class="flex flex-col gap-2">
+<p class="text-white text-lg font-bold">Proposal 3: Tokenomics Adjustment</p>
+<p class="text-white/70 text-sm">Voting ends in 14 days</p>
+<div class="w-full bg-primary/20 rounded-full h-2.5 mt-2">
+<div class="bg-gradient-to-r from-purple-500 to-primary h-2.5 rounded-full" style="width: 20%; box-shadow: 0 0 5px #06dcf9;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

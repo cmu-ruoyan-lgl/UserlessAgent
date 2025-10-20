@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 #root {
   width: 100%;
@@ -6,8 +6,8 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #0a0a0a;
-  color: #ffffff;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%);
+  color: #0f172a;
 }
 
 .container {
@@ -22,10 +22,14 @@
   align-items: center;
   padding: 1rem 2rem;
   margin-bottom: 2rem;
-  background-color: #1a1a1a;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   width: 100%;
   box-sizing: border-box;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
 }
 
 .header-logo {
@@ -34,21 +38,22 @@
 }
 
 .connect-wallet-btn {
-  background-color: #646cff;
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
   color: white;
   border: none;
-  padding: 0.6em 1.2em;
-  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
 }
 
 .connect-wallet-btn:hover {
-  background-color: #535bf2;
+  background: linear-gradient(135deg, #0284c7, #0369a1);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
 }
 
 .logo {
@@ -104,20 +109,26 @@
 
 .proposal-stream {
   flex: 1;
-  background-color: #1a1a1a;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
   min-width: 0; /* Allows flex item to shrink below content size */
 }
 
 .userless-agent {
   width: 270px;
   min-width: 350px;
-  background-color: #1a1a1a;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
   height: fit-content;
 }
 
@@ -130,12 +141,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.5);
 }
 
 .userless-agent-title {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
+  color: #0f172a;
 }
 
 .userless-agent-tabs {
@@ -146,16 +158,17 @@
 .userless-agent-tab {
   padding: 0.5rem 0.8rem;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   transition: all 0.2s ease;
-  color: #888;
+  color: #64748b;
   position: relative;
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .userless-agent-tab.active {
-  color: #fff;
-  background-color: #242424;
+  color: #0ea5e9;
+  background-color: rgba(14, 165, 233, 0.1);
 }
 
 .userless-agent-tab.active::before {
@@ -165,7 +178,8 @@
   bottom: -1px;
   width: 100%;
   height: 2px;
-  background-color: #646cff;
+  background-color: #0ea5e9;
+  border-radius: 1px;
 }
 
 .your-echo {
@@ -175,11 +189,14 @@
 
 .avatar-column {
   flex: 1;
-  background-color: #1a1a1a;
-  padding: 1rem;
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  border-radius: 1rem;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,10 +204,13 @@
 
 .crypto-column {
   flex: 2;
-  background-color: #1a1a1a;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   max-height: 300px;
@@ -216,17 +236,18 @@
 }
 
 .crypto-list::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: rgba(0, 0, 0, 0.05);
   border-radius: 3px;
 }
 
 .crypto-list::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #0ea5e9;
   border-radius: 3px;
+  transition: background 0.2s ease;
 }
 
 .crypto-list::-webkit-scrollbar-thumb:hover {
-  background: #444;
+  background: #0284c7;
 }
 
 .crypto-name {
@@ -278,25 +299,33 @@
 }
 
 .price-change.positive {
-  color: #00ff9d;
+  color: #22c55e;
+  font-weight: 600;
 }
 
 .price-change.negative {
-  color: #ff4d4d;
+  color: #ef4444;
+  font-weight: 600;
 }
 
 .avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+  background: linear-gradient(145deg, #f8fafc, #e2e8f0);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 0.5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  border: 2px solid #333;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 3px solid rgba(14, 165, 233, 0.2);
   overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(14, 165, 233, 0.2);
 }
 
 .avatar-image {
@@ -312,18 +341,19 @@
 
 .avatar-placeholder {
   font-size: 3rem;
-  color: #646cff;
+  color: #0ea5e9;
 }
 
 .user-address {
-  font-family: monospace;
-  color: #888;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  color: #64748b;
   font-size: 0.9rem;
-  background-color: #2a2a2a;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
+  background-color: rgba(14, 165, 233, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
   margin: 0.5rem 0;
   word-break: break-all;
+  border: 1px solid rgba(14, 165, 233, 0.2);
 }
 
 .crypto-item {
@@ -331,12 +361,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem;
-  border-bottom: 1px solid #333;
-  transition: background-color 0.3s ease;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .crypto-item:hover {
-  background-color: #2a2a2a;
+  background-color: rgba(14, 165, 233, 0.05);
+  transform: translateX(4px);
 }
 
 .crypto-item:last-child {
@@ -436,23 +469,31 @@
 .footer {
   margin-top: 2rem;
   padding: 1.5rem;
-  border-top: 1px solid #333;
+  border-top: 1px solid rgba(226, 232, 240, 0.5);
   display: flex;
   justify-content: center;
   gap: 2rem;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1rem 1rem 0 0;
 }
 
 .footer-link {
-  color: #888;
+  color: #64748b;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
 .footer-link:hover {
-  color: #646cff;
+  color: #0ea5e9;
+  background-color: rgba(14, 165, 233, 0.1);
+  transform: translateY(-2px);
 }
 
 .footer-icon {
@@ -467,14 +508,14 @@
 }
 
 .fancy-title {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 900;
-  background: linear-gradient(120deg, #646cff, #9f9fff);
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  background: linear-gradient(135deg, #0ea5e9, #d946ef);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
   position: relative;
   display: inline-block;
   font-size: 1.5rem;
@@ -504,29 +545,34 @@ h2.fancy-title {
   gap: 1rem;
   padding: 2rem;
   text-align: center;
-  color: #888;
+  color: #64748b;
   min-height: 200px;
+  background: rgba(14, 165, 233, 0.05);
+  border-radius: 1rem;
+  border: 1px solid rgba(14, 165, 233, 0.1);
 }
 
 .connect-prompt p {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  color: #475569;
 }
 
 .connect-prompt .connect-wallet-btn {
-  background-color: #646cff;
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
   color: white;
   border: none;
   padding: 0.8em 1.6em;
-  border-radius: 8px;
+  border-radius: 0.75rem;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
 }
 
 .connect-prompt .connect-wallet-btn:hover {
-  background-color: #535bf2;
+  background: linear-gradient(135deg, #0284c7, #0369a1);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
 }
