@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import favicon from './assets/favicon.png'
+import userlessAgentLogo from './assets/userlessAgent.png'
 import './styles/App.css'
 import ProposalStream from './components/ProposalStream'
 import UserlessAgent from './components/UserlessAgent'
@@ -14,7 +14,7 @@ function AppContent() {
   const [cryptoList, setCryptoList] = useState([
     { name: 'AAVE', symbol: 'AAVE', price: 0, change24h: 0, icon: 'https://cryptologos.cc/logos/aave-aave-logo.png', isChecked: true, isFollowed: true },
     { name: 'Uniswap', symbol: 'UNI', price: 0, change24h: 0, icon: 'https://cryptologos.cc/logos/uniswap-uni-logo.png', isChecked: true, isFollowed: true },
-    { name: 'UserlessAgent', symbol: 'UA', price: 0, change24h: 0, icon: './src/assets/echo.png', isChecked: true, isFollowed: true },
+    { name: 'UserlessAgent', symbol: 'UA', price: 0, change24h: 0, icon: './src/assets/UserlessAgent.png', isChecked: true, isFollowed: true },
     { name: 'Ethereum', symbol: 'ETH', price: 0, change24h: 0, icon: 'https://cryptologos.cc/logos/ethereum-eth-logo.png', isChecked: true, isFollowed: false },
     { name: 'BinanceCoin', symbol: 'BNB', price: 0, change24h: 0, icon: 'https://cryptologos.cc/logos/bnb-bnb-logo.png', isChecked: true, isFollowed: false },
   ])
@@ -98,7 +98,10 @@ function AppContent() {
   return (
     <>
       <header className="header">
-        <img src={favicon} className="header-logo" alt="UserlessAgent Logo" />
+        <div className="header-brand">
+          <img src={userlessAgentLogo} className="header-logo" alt="UserlessAgent Logo" />
+          <span className="header-title">UserlessAgent</span>
+        </div>
         {authenticated ? (
           <button className="connect-wallet-btn" onClick={logout}>
             Disconnect
